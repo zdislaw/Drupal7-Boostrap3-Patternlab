@@ -46,8 +46,8 @@ module.exports = function(grunt) {
       },
       patternlab : {
         files : {
-         "httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/styles.css" : 
-         "httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/scss/styles.scss"
+         "httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/style.css" : 
+         "httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/style.scss"
         }
       }
     },
@@ -74,16 +74,19 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
+        options: {
+          reload: false,
+          spawn: false,
+          interrupt: false,
+          livereload: true
+        },
         files: [
           'httpdocs/sites/all/themes/beaconfire_bootstrap/sass/**/*.scss',
           'httpdocs/sites/default/themes/primary_bootstrap/sass/**/*.scss',
           'httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/scss/**/*.scss',
           'httpdocs/sites/default/themes/primary_bootstrap/js/parts/**/*.js'
         ],
-        tasks: ['uglify','sass','postcss'],
-        options: {
-          spawn: false,
-        }
+        tasks: ['uglify','sass','postcss']        
       }
     }
   });
