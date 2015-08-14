@@ -1,0 +1,29 @@
+#admin-menu, #admin-menu .dropdown{
+	z-index: 10000;
+}
+#navbar{
+
+	.navbar-header{
+
+	}
+	.logo{
+
+		img{
+			max-width: 100%;
+		}
+	}
+	.tag-line{//below 768px
+
+	}
+	.btn{
+
+	}
+}
+
+@media (min-width: 768px){
+	
+}
+
+@media (max-width: 768px){
+	
+}

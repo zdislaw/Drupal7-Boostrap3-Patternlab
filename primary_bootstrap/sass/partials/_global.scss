@@ -1,0 +1,25 @@
+// @file
+// Global partials
+//
+// These partials will be shared across all CSS files and includes Compass
+// extensions, variables, functions, extendables, and mixins.
+
+// Custom partials to be shared with all .scss files. Imported with limited
+// sass globbing to ensure load order.
+
+//@import "compass/typography/vertical_rhythm";
+
+@import 
+'global/helpers/accessibility',
+'global/helpers/clearfix',
+'global/helpers/smallcaps',
+'global/helpers/em',
+'global/helpers/svg-background',
+'global/helpers/responsive-video';
+
+@import 
+'global/placeholders',
+'global/mixins';
+
+//'global/variables/colors',
+//'global/variables/typography'

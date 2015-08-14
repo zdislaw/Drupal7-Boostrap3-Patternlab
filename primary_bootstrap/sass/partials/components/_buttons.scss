@@ -1,0 +1,63 @@
+//
+// Button overrides
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn{
+    &:hover,
+    &:focus,
+    &.focus {
+    }
+}
+
+.btn-custom:hover{
+    text-decoration: none;
+}
+
+.btn-dark{
+
+}
+
+.btn-dark:hover{
+
+}
+
+.btn-light, .btn-light:focus{
+
+}
+
+.btn-light:hover{
+
+}
+
+.btn-red{
+
+}
+
+.btn-red:hover{
+
+}
+
+.btn-light-red, .btn-light-red:focus{
+
+}
+
+.btn-light-red:hover,
+.btn-hover-red:hover{
+
+}
+
+.btn-small{
+
+}
+
+.btn-full{
+
+}
+
+.btn-search{
+
+}

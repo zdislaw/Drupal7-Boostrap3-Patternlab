@@ -1,0 +1,18 @@
+// @file
+// Styles for pagers.
+
+/* .pagination .first a:before {
+  content: "|\00AB";
+} */
+
+.pagination .prev a:before {
+  content: "\00AB ";
+}
+
+.pagination .next a:after {
+  content: " \00BB";
+}
+
+/* .pagination .last a:before {
+  content: "\00BB|";
+} */

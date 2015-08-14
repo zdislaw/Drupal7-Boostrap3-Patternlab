@@ -1,0 +1,29 @@
+name = Primary (Bootstrap)
+description = This is a site-specific theme built with the Bootstrap library.
+core = 7.x
+base theme = beaconfire_bootstrap
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[header_language_switcher] = 'Header Language Switcher'
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Slide-In Sidebar'
+regions[footer]         = 'Footer'
+regions[footer_language_switcher] = 'Footer Language Switcher'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+regions[splash]					= 'Splash Overlay'
+
+stylesheets[all][]   = css/styles.css
+
+scripts[] = jquery.cookie.js
+scripts[] = primary_bootstrap.min.js
+
+plugins[panels][layouts] = layouts

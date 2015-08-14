@@ -1,0 +1,22 @@
+ul{
+	&.horizontal-with-dots{
+		@extend %no-bullets;
+		text-decoration: none;
+	}
+}
+
+@media (min-width: 768px) {
+	ul{
+		&.horizontal-with-dots{
+		  	li{
+		  		display: inline;
+				background: url(img/ellipse.png) no-repeat right;
+				padding-right: 15px;
+				margin-right: 5px;
+				&:last-child{
+					background: none;
+				}
+		  	}
+		}
+	}
+}

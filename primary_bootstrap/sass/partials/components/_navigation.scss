@@ -1,0 +1,82 @@
+/* 
+TODO: KSS styleguid rules here
+
+*/
+
+#navbar{
+
+}
+.navbar-brand{
+
+}
+.navbar-btn{
+
+}
+.navbar-collapse {
+
+	.container{
+
+	}
+	.navbar-nav{
+		>.leaf,
+		>.expanded,
+		>.collapsed{
+			>a{
+
+			}
+			>a:hover,
+			>a:focus{
+
+			}
+		}
+		>.active{
+			>a,
+			>a:hover,
+			>a:focus{
+
+			}			
+		}
+		.active-trail{
+			.active{
+				a,
+				a:hover,
+				a:focus{
+
+				}
+			}
+		}
+	}
+	&.affix {
+
+	}
+}
+.navbar{
+	.dropdown-menu{
+
+		>li{
+
+			a{
+
+			}
+			a:hover,
+			>a:focus{
+
+			}
+		}
+		
+	}
+}
+.navbar-toggle{
+
+}
+
+@media (min-width: 768px) {
+	#navbar{
+		.logo{
+
+		}
+	}
+	.navbar-header{
+
+	}
+}

@@ -1,0 +1,16 @@
+//This file is included in the "beaconfire_boostrap" theme not this client theme!!
+//Variables change here will rollup into the Beaconfire Bootstrap theme, altering the
+//values of the core Bootstrap styles ("/sites/all/themes/beaconfire_bootstrap/css/beaconfire_bootstrap.css")
+
+//NOTE there is also a variables file ("/sites/all/themes/beaconfire_bootstrap/sass/bootstrap_variables.scss") that
+//overrides Bootstrap variables for ALL Beaconfire builds. For example, this is why the base font size is 16px instead
+//the Bootstrap default of 14px.
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  Verdana, Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+$border-radius-base:        0;

@@ -1,0 +1,17 @@
+//This SASS project is not using Compass.
+//@includes here only call mixins found in /global/_mixins.scss
+//We are using autoprefixer as a grunt task to add required vendor prefixes (see Gruntfile.js)
+
+//This site is using Bootstrap, and those base styles are coming from CDN
+//CDN version is set in 'Drupal > Appearance > Settings > Primary(Bootstrap)
+//Overrides to those styles that should affect all BF sites should happen in '/sites/all/themes/beaconfire_boostrap/'
+//Styles in these files are valid only for this site build
+@import
+'partials/global',
+'partials/base',
+'partials/helper-classes',
+'partials/module-tweaks',
+'partials/components',
+'partials/pages',
+'partials/quick-fixes',
+'partials/print';

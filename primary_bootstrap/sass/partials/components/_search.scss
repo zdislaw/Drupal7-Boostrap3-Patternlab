@@ -1,0 +1,22 @@
+//Percentage widths are because the results are using masonry right now
+.search-results{
+	margin: 0;
+	padding: 0;
+}
+.search-result{
+	@extend %no-bullets;
+	width: 100%;
+	outline: 1px solid grey;
+	padding: 1em;
+	margin: 5px;
+}
+@media (min-width: 768px) {
+	.search-result{
+		width: 47%;
+	}
+}
+@media (min-width: 1200px) {
+	.search-result{
+		width: 30%;
+	}
+}

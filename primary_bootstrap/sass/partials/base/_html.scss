@@ -1,0 +1,92 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  // Universal transitions  
+  transition: all 200ms ease;
+  transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow;
+}
+abbr {
+  @include smallcaps();
+
+  &[title] {
+    border-bottom: 1px dotted;
+  }
+
+  &:hover {
+    cursor: help;
+  }
+}
+address {
+  font-style: italic;
+}
+
+article {}
+
+aside {}
+
+audio {}
+
+b {}
+
+blockquote {
+
+}
+
+// Don't style button elements, since they're often styled as links for
+// accessible widgets. Use the .button class in partials/components/buttons.
+button {
+
+}
+
+canvas {}
+
+caption {}
+
+cite {}
+
+code {}
+
+col {}
+
+colgroup {}
+
+datalist {}
+
+dd {
+
+}
+
+del {}
+
+details {}
+
+dfn {
+
+}
+
+dl {
+
+}
+
+dt {}
+
+em {}
+
+embed {}
+
+fieldset {}
+
+figcaption {}
+
+figure {
+
+}
+
+footer {}
+
+form {
+
+}

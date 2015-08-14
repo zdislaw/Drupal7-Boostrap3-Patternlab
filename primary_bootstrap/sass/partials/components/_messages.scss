@@ -1,0 +1,31 @@
+// @file
+// Styles for Drupal messages.
+
+.messages {
+  border-radius: 0;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 4px 1px;
+  margin: 1em;
+  padding: .5em; // LTR
+  position: relative;
+  word-wrap: break-word;
+
+  @media print {
+    background-image: none !important;
+    padding-left: .5em; // LTR
+
+  }
+
+  em {
+    color: #000;
+  }
+}
+
+.messages__list {
+  margin: 0;
+
+  > li + li {
+    margin-top: .5em;
+  }
+}

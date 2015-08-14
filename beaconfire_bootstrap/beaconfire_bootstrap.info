@@ -1,0 +1,24 @@
+name = Beaconfire Bootstrap
+description = This is a sub-theme of theme Bootstrap. It provides theming and functionality universal to all Beaconfire sites using Bootstrap. It should never be used, but instead it should be the base theme of a custom theme for each site.
+core = 7.x
+base theme = bootstrap
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+stylesheets[all][]   = css/beaconfire_bootstrap.css
+
+scripts[] = beaconfire_bootstrap.min.js
+scripts[] = js/libs/bootstrap.min.js
