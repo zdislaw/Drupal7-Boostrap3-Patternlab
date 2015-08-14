@@ -411,7 +411,6 @@ body.panels-ipe .modal-body {
 
 .tabledrag-handle .handle {
   background-image: image-url("bg/draggable.png", false, false);
-  background-image: -webkit-linear-gradient(transparent, transparent), inline-image("bg/draggable.svg");
   background-image: linear-gradient(transparent, transparent), inline-image("bg/draggable.svg");
   background-position: 0 50%;
   background-repeat: no-repeat;
@@ -599,5 +598,4 @@ img[style*="float: right"] {
     max-width: 1240px;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=../../../../../../css/styles.css.map */

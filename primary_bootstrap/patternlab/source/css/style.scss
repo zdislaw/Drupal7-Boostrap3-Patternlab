@@ -50,8 +50,6 @@
 @import "../vendor/bootstrap/stylesheets/bootstrap/utilities";
 @import "../vendor/bootstrap/stylesheets/bootstrap/responsive-utilities";
 
-@import "/sites/default/themes/primary_bootstrap/sass/styles";
-
 .container {
     .sg-pattern {
         @include make-row();
