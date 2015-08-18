@@ -1,5 +1,5 @@
-name = Primary (Bootstrap)
-description = This is a site-specific theme built with the Bootstrap library.
+name = Client Primary 7.x 1.0
+description = This is the client-specific theme built by Beaconfire RedEngine.
 core = 7.x
 base theme = beaconfire_bootstrap
 
