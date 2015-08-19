@@ -8,6 +8,9 @@
   transition: all 200ms ease;
   transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow;
 }
+img{
+  max-width: 100%;
+}
 abbr {
   @include smallcaps();
 

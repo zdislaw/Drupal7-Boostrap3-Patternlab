@@ -1,8 +1,15 @@
-<nav id="nav" class="nav">
-	<ul class="nav-list">
-		<li><a href="{{ url }}">Home</a></li>
-		<li><a href="{{ url }}">About</a></li>
-		<li><a href="{{ url }}">Blog</a></li>
-		<li><a href="{{ url }}">Contact</a></li>
-	</ul>
-</nav><!--end .nav-->
+<div class="navbar-collapse collapse">
+	<nav role="navigation">
+		<ul class="menu nav navbar-nav">
+			<li class="leaf"><a href="{{ url }}">Home</a></li>
+			<li class="expanded active-trail dropdown active"><a href="{{ url }}"  data-target="#" class="active-trail dropdown-toggle active" data-toggle="dropdown" aria-expanded="false">About <span class="caret"></span></a>
+				<ul class="dropdown-menu"><li class="first leaf"><a href="#">Nulla Singularis</a></li>
+					<li class="leaf"><a href="#">Sagaciter</a></li>
+					<li class="leaf"><a href="#">Sino</a></li>
+				</ul>
+			</li>
+			<li class="leaf"><a href="{{ url }}">Blog</a></li>
+			<li class="leaf"><a href="{{ url }}">Contact</a></li>
+		</ul>
+	</nav><!--end .nav-->
+</div>

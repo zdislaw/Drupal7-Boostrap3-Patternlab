@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="stylesheet" href="../../css/style.css?1439300692" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1439993026" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -15,8 +15,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1439300692" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1439300692" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1439993026" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1439993026" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -61,48 +61,82 @@
 					<div id="molecules-accordion" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-06-components-01-accordion/01-molecules-06-components-01-accordion.html" class="patternLink" data-patternpartial="molecules-accordion">Accordion</a></h2>
 						<div class="sg-pattern-body">
-							<div class="accordion">
-	<ul>
-		<li>
-			<a href="#" class="acc-handle">Accordion 1</a>
-			<div class="acc-panel">
-			</div>
-		</li>
-		<li>
-			<a href="#" class="acc-handle">Accordion 2</a>
-			<div class="acc-panel">
-			</div>
-		</li>
-		<li>
-			<a href="#" class="acc-handle">Accordion 3</a>
-			<div class="acc-panel">
-			</div>
-		</li>
-	</ul>
-</div>
+							<div class="panel-group bootstrap-fieldgroup-accordion" id="bootstrap-fieldgroup-accordion--person-information">
+
+      
+        <div class="panel panel-default group-person-information-name field-group-bootstrap_fieldgroup_accordion_item">
+
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#bootstrap-fieldgroup-accordion--person-information" href="#bootstrap-fieldgroup-accordion-item--name-0">
+                Name              </a>
+            </h4>
+          </div>
+
+          <div id="bootstrap-fieldgroup-accordion-item--name-0" class="panel-collapse collapse group-person-information-name field-group-bootstrap_fieldgroup_accordion_item">
+            <div class="panel-body"><div class="field field-name-field-first-name field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Tim</div></div></div><div class="field field-name-field-last-name field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Arnold</div></div></div></div>
+          </div>
+
+        </div>
+
+      
+        <div class="panel panel-default group-person-information-address field-group-bootstrap_fieldgroup_accordion_item">
+
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#bootstrap-fieldgroup-accordion--person-information" href="#bootstrap-fieldgroup-accordion-item--address-1">
+                Address              </a>
+            </h4>
+          </div>
+
+          <div id="bootstrap-fieldgroup-accordion-item--address-1" class="panel-collapse collapse group-person-information-address field-group-bootstrap_fieldgroup_accordion_item">
+            <div class="panel-body"><div class="field field-name-field-street-address field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">10614 Glenwild Rd.</div></div></div><div class="field field-name-field-email-address field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">tim.arnold@beaconfire-red.com</div></div></div></div>
+          </div>
+
+        </div>
+
+      
+    </div>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;accordion&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;
-			&lt;a href=&quot;#&quot; class=&quot;acc-handle&quot;&gt;Accordion 1&lt;/a&gt;
-			&lt;div class=&quot;acc-panel&quot;&gt;
-			&lt;/div&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href=&quot;#&quot; class=&quot;acc-handle&quot;&gt;Accordion 2&lt;/a&gt;
-			&lt;div class=&quot;acc-panel&quot;&gt;
-			&lt;/div&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href=&quot;#&quot; class=&quot;acc-handle&quot;&gt;Accordion 3&lt;/a&gt;
-			&lt;div class=&quot;acc-panel&quot;&gt;
-			&lt;/div&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
+										&lt;div class=&quot;panel-group bootstrap-fieldgroup-accordion&quot; id=&quot;bootstrap-fieldgroup-accordion--person-information&quot;&gt;
+
+      
+        &lt;div class=&quot;panel panel-default group-person-information-name field-group-bootstrap_fieldgroup_accordion_item&quot;&gt;
+
+          &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;h4 class=&quot;panel-title&quot;&gt;
+              &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#bootstrap-fieldgroup-accordion--person-information&quot; href=&quot;#bootstrap-fieldgroup-accordion-item--name-0&quot;&gt;
+                Name              &lt;/a&gt;
+            &lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;bootstrap-fieldgroup-accordion-item--name-0&quot; class=&quot;panel-collapse collapse group-person-information-name field-group-bootstrap_fieldgroup_accordion_item&quot;&gt;
+            &lt;div class=&quot;panel-body&quot;&gt;&lt;div class=&quot;field field-name-field-first-name field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tim&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-last-name field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Arnold&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+      
+        &lt;div class=&quot;panel panel-default group-person-information-address field-group-bootstrap_fieldgroup_accordion_item&quot;&gt;
+
+          &lt;div class=&quot;panel-heading&quot;&gt;
+            &lt;h4 class=&quot;panel-title&quot;&gt;
+              &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#bootstrap-fieldgroup-accordion--person-information&quot; href=&quot;#bootstrap-fieldgroup-accordion-item--address-1&quot;&gt;
+                Address              &lt;/a&gt;
+            &lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;bootstrap-fieldgroup-accordion-item--address-1&quot; class=&quot;panel-collapse collapse group-person-information-address field-group-bootstrap_fieldgroup_accordion_item&quot;&gt;
+            &lt;div class=&quot;panel-body&quot;&gt;&lt;div class=&quot;field field-name-field-street-address field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;10614 Glenwild Rd.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-email-address field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;tim.arnold@beaconfire-red.com&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+      
+    &lt;/div&gt;
 									</code>
 								</pre>
 							</div>
@@ -185,10 +219,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1439300692">
+	<script id="pl-js-polyfill-insert-1439993026">
 		(function() {
 			if (self != top) {
-				var cb = '1439300692';
+				var cb = '1439993026';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -197,10 +231,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1439300692">
+	<script id="pl-js-insert-1439993026">
 		(function() {
 			if (self != top) {
-				var cb = '1439300692';
+				var cb = '1439993026';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

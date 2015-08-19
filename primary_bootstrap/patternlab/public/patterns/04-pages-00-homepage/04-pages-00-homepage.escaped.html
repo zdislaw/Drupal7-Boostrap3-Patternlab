@@ -3,14 +3,21 @@
 	&lt;header id=&quot;navbar&quot; role=&quot;banner&quot; class=&quot;navbar navbar-default&quot;&gt;
 	&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../../images/logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;&lt;/a&gt;		&lt;a href=&quot;#search-form&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;&lt;/a&gt;
 		&lt;a href=&quot;#nav&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;/span&gt;&lt;/a&gt;
-	&lt;nav id=&quot;nav&quot; class=&quot;nav&quot;&gt;
-		&lt;ul class=&quot;nav-list&quot;&gt;
-			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/nav&gt;&lt;!--end .nav--&gt;
+	&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+		&lt;nav role=&quot;navigation&quot;&gt;
+			&lt;ul class=&quot;menu nav navbar-nav&quot;&gt;
+				&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li class=&quot;expanded active-trail dropdown active&quot;&gt;&lt;a href=&quot;#&quot;  data-target=&quot;#&quot; class=&quot;active-trail dropdown-toggle active&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;About &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+					&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Nulla Singularis&lt;/a&gt;&lt;/li&gt;
+						&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sagaciter&lt;/a&gt;&lt;/li&gt;
+						&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sino&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+				&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/nav&gt;&lt;!--end .nav--&gt;
+	&lt;/div&gt;
 	&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
 	    &lt;fieldset&gt;
 		    &lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;/legend&gt;
@@ -32,8 +39,8 @@
 					&lt;/div&gt;
 				&lt;/a&gt;
 			&lt;/div&gt;
-		&lt;div class=&quot;g g-3up&quot;&gt;
-				&lt;div class=&quot;gi&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
 					&lt;div class=&quot;block block-inset&quot;&gt;
 					    &lt;a href=&quot;#&quot; class=&quot;inner&quot;&gt;
 							&lt;div class=&quot;b-thumb&quot;&gt;
@@ -43,7 +50,7 @@
 							&lt;/div&gt;
 						&lt;/a&gt;
 					&lt;/div&gt;				&lt;/div&gt;
-				&lt;div class=&quot;gi&quot;&gt;
+				&lt;div class=&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
 					&lt;div class=&quot;block block-inset&quot;&gt;
 					    &lt;a href=&quot;#&quot; class=&quot;inner&quot;&gt;
 							&lt;div class=&quot;b-thumb&quot;&gt;
@@ -53,7 +60,7 @@
 							&lt;/div&gt;
 						&lt;/a&gt;
 					&lt;/div&gt;				&lt;/div&gt;
-				&lt;div class=&quot;gi&quot;&gt;
+				&lt;div class=&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
 					&lt;div class=&quot;block block-inset&quot;&gt;
 					    &lt;a href=&quot;#&quot; class=&quot;inner&quot;&gt;
 							&lt;div class=&quot;b-thumb&quot;&gt;
@@ -67,12 +74,12 @@
 
 		&lt;hr /&gt;
 
-		&lt;div class=&quot;l-two-col&quot;&gt;
-			&lt;div class=&quot;l-main&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-9&quot;&gt;
 				&lt;section class=&quot;section latest-posts&quot;&gt;
 					&lt;h2 class=&quot;section-title&quot;&gt;Latest Posts&lt;/h2&gt;
-					&lt;ul class=&quot;post-list&quot;&gt;
-							&lt;li&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
+					&lt;ul class=&quot;row&quot;&gt;
+							&lt;li class=&quot;col-sm-12 col-md-3 col-sm-3&quot;&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;b-inner&quot;&gt;
 		&lt;div class=&quot;b-thumb&quot;&gt;
 			&lt;img src=&quot;../../images/sample/thumb-square-river.jpg&quot; alt=&quot;Post Thumbnail&quot; /&gt;		&lt;/div&gt;
@@ -82,7 +89,7 @@
 		&lt;/div&gt;
 	&lt;/a&gt;
 &lt;/div&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
+							&lt;li class=&quot;col-sm-12 col-md-3 col-sm-3&quot;&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;b-inner&quot;&gt;
 		&lt;div class=&quot;b-thumb&quot;&gt;
 			&lt;img src=&quot;../../images/sample/thumb-square-ivy.jpg&quot; alt=&quot;Ivy&quot; /&gt;		&lt;/div&gt;
@@ -92,7 +99,7 @@
 		&lt;/div&gt;
 	&lt;/a&gt;
 &lt;/div&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
+							&lt;li class=&quot;col-sm-12 col-md-3 col-sm-3&quot;&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;b-inner&quot;&gt;
 		&lt;div class=&quot;b-thumb&quot;&gt;
 			&lt;img src=&quot;../../images/sample/thumb-square-yosemite.jpg&quot; alt=&quot;Yosemite&quot; /&gt;		&lt;/div&gt;
@@ -102,7 +109,7 @@
 		&lt;/div&gt;
 	&lt;/a&gt;
 &lt;/div&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
+							&lt;li class=&quot;col-sm-12 col-md-3 col-sm-3&quot;&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;b-inner&quot;&gt;
 		&lt;div class=&quot;b-thumb&quot;&gt;
 			&lt;img src=&quot;../../images/sample/thumb-square-fire.jpg&quot; alt=&quot;Fire&quot; /&gt;		&lt;/div&gt;
@@ -112,7 +119,7 @@
 		&lt;/div&gt;
 	&lt;/a&gt;
 &lt;/div&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
+							&lt;li class=&quot;col-sm-12 col-md-3 col-sm-3&quot;&gt;&lt;div class=&quot;block block-thumb&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;b-inner&quot;&gt;
 		&lt;div class=&quot;b-thumb&quot;&gt;
 			&lt;img src=&quot;../../images/sample/thumb-square-gear.jpg&quot; alt=&quot;Camping Gear&quot; /&gt;		&lt;/div&gt;
@@ -127,7 +134,7 @@
 				&lt;/section&gt;
 			&lt;/div&gt;&lt;!--end .l-main--&gt;
 
-			&lt;div class=&quot;l-sidebar&quot;&gt;
+			&lt;div class=&quot;col-sm-3&quot;&gt;
 				&lt;section class=&quot;section related-posts&quot;&gt;
 					&lt;h3 class=&quot;section-title&quot;&gt;Recent Tweets&lt;/h3&gt;
 					&lt;ul class=&quot;headline-list&quot;&gt;

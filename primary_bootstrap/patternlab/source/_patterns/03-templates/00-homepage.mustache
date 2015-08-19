@@ -8,9 +8,9 @@
 			{{> molecules-block-hero }}
 		{{/ hero}}
 
-		<div class="g g-3up">
+		<div class="row">
 			{{# touts}}
-				<div class="gi">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					{{> molecules-block-inset }}
 				</div>
 			{{/ touts}}
@@ -18,20 +18,20 @@
 
 		<hr />
 
-		<div class="l-two-col">
-			<div class="l-main">
+		<div class="row">
+			<div class="col-sm-9">
 				<section class="section latest-posts">
 					<h2 class="section-title">Latest Posts</h2>
-					<ul class="post-list">
+					<ul class="row">
 						{{# latest-posts }}
-							<li>{{> molecules-media-block }}</li>
+							<li class="col-sm-12 col-md-3 col-sm-3">{{> molecules-media-block }}</li>
 						{{/ latest-posts }}
 					</ul>
 					<a href="#" class="text-btn">View more posts</a>
 				</section>
 			</div><!--end .l-main-->
 
-			<div class="l-sidebar">
+			<div class="col-sm-3">
 				{{> organisms-recent-tweets }}
 			</div><!--end .l-sidebar-->
 		</div><!--end .l-two-col-->

@@ -71,6 +71,10 @@
   transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow;
 }
 
+img {
+  max-width: 100%;
+}
+
 abbr {
   font-variant: small-caps;
   text-transform: lowercase;
