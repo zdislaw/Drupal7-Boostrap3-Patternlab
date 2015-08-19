@@ -35,27 +35,27 @@
   clear: both;
 }
 
-.search-result, ul.horizontal-with-dots {
+.search-result, .social, ul.horizontal-with-dots {
   list-style-type: none;
   list-style-image: none;
   margin-left: 0;
   padding-left: 0;
 }
 
-.search-result ul, ul.horizontal-with-dots ul {
+.search-result ul, .social ul, ul.horizontal-with-dots ul {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
 }
 
-.search-result li, ul.horizontal-with-dots li {
+.search-result li, .social li, ul.horizontal-with-dots li {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
 }
 
-.search-result li.leaf, ul.horizontal-with-dots li.leaf {
+.search-result li.leaf, .social li.leaf, ul.horizontal-with-dots li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
@@ -206,8 +206,8 @@ ul.panels-ipe-linkbar li {
 
 @font-face {
   font-family: 'fontello';
-  src: url("fonts/fontello.eot?66063797");
-  src: url("fonts/fontello.eot?66063797#iefix") format("embedded-opentype"), url("fonts/fontello.woff?66063797") format("woff"), url("fonts/fontello.ttf?66063797") format("truetype"), url("fonts/fontello.svg?66063797#fontello") format("svg");
+  src: url("../fonts/fontello.eot?66063797");
+  src: url("../fonts/fontello.eot?66063797#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?66063797") format("woff"), url("../fonts/fontello.ttf?66063797") format("truetype"), url("../fonts/fontello.svg?66063797#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -399,6 +399,22 @@ body.panels-ipe .modal-body {
   .search-result {
     width: 30%;
   }
+}
+
+.social li {
+  float: left;
+}
+
+.social .web-icon {
+  font-size: 3em;
+}
+
+.social .web-icon:hover {
+  text-decoration: none;
+}
+
+.social span {
+  display: none;
 }
 
 .group-tab-wrapper {

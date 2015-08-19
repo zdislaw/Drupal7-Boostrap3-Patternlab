@@ -1,6 +1,19 @@
 //.web-icon defaults and the webfonts used for the different networks come from
 //"partials/base/_fontello.scss"
 .social{
+	@extend %no-bullets;
+	li{
+		float: left;
+	}
+	.web-icon{
+		font-size: 3em;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	span{
+		display: none;
+	}
 	.web-icon-facebook {
 
 	}
