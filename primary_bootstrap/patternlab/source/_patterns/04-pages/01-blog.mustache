@@ -2,21 +2,21 @@
 	{{> organisms-header }}
 	<div role="main">
 		<h1 class="section-title">Our Outdoor Blog</h1>
-		<div class="l-two-col">
-			<div class="l-main">
+		<div class="row">
+			<div class="col-sm-9">
 				<section class="section latest-posts">
 					
-					<ul class="post-list">
+					<div class="post-list">
 						{{# latest-posts}}
-							<li>{{> molecules-media-block }}</li>
+							{{> molecules-media-block }}
 						{{/ latest-posts}}
-					</ul>
+					</div>
 					<a href="#" class="text-btn">View more posts</a>
 				</section>
 				{{> molecules-pagination }}
 			</div><!--end l-main-->
 
-			<div class="l-sidebar">
+			<div class="col-sm-3">
 				{{> organisms-recent-tweets }}
 			</div><!--end l-sidebar-->
 		</div><!--end two-col-->

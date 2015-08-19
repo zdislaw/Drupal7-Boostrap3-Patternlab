@@ -1,15 +1,53 @@
 
 @import
-'/var/www/drupal/httpdocs/sites/all/themes/beaconfire_bootstrap/sass/beaconfire_bootstrap',
 '/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/global',
 '/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/base',
-'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/helper-classes',
-'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/module-tweaks',
-'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/components',
-'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/pages',
-'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/quick-fixes',
-'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/print';
+'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/helper-classes';
 
 
-//OK, so that imported all the sass stuff from Beaconfire Bootstrap and the client theme
-//Now jsut start adding SASS here that you will eventually move to components in the client theme sass.
+//OK, so that imported some of the the sass stuff from Beaconfire Bootstrap and the client theme
+//that will be handy to be able to use in here.
+//Now just start adding SASS here that you will eventually move to components in the client theme sass.
+
+
+
+.teaser{//http://v7-2.dsk.beaconfire.us/sites/default/themes/primary_bootstrap/patternlab/public/?p=pages-blog
+    margin-bottom: 2em;
+    @include clearfix;
+    .teaser-image{
+        float: left;
+        width: 20%;
+        margin-right: 1em;
+    }
+    .teaser-content{
+        float: left;
+        width: 80%;
+    }
+    .teaser-title{
+        margin-bottom: .4em;
+    }
+    h2 {
+        margin-bottom: 0.125em;
+        line-height: 1.25em;
+        font-size: 1em;
+    }
+}
+
+.comment{//http://v7-2.dsk.beaconfire.us/sites/default/themes/primary_bootstrap/patternlab/public/?p=pages-article
+    margin-bottom: 2em;
+    @include clearfix;
+    .comment-meta{
+        float: left;
+        width: 20%;
+        margin-right: 1em;
+    }
+    .comment-content{
+        float: left;
+        width: 80%;
+    }
+    .comment-name{
+        margin-bottom: .4em;
+        line-height: 1.25em;
+        font-size: 1em;
+    }
+}

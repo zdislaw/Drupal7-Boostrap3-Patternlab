@@ -1,11 +1,8 @@
 <form action="{{ url }}" method="post" class="inline-form search-form">           
-    <fieldset>
-	    <legend class="is-vishidden">Search</legend>
-	    <label for="search-field" class="is-vishidden">Search</label>
-	    <input type="search" placeholder="Search" id="search-field" class="search-field" />
-	    <button class="search-submit">
-	    	<span class="icon-search" aria-hidden="true"></span>
-	    	<span class="is-vishidden">Search</span>
-	    </button>
-    </fieldset>
+	<div class="input-group">
+		<input title="Enter the terms you wish to search for." placeholder="Search" class="form-control form-text form-search" type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128">
+		<span class="input-group-btn"><button type="submit" class="btn btn-default">Search</button></span>
+	</div>
 </form>
+
+

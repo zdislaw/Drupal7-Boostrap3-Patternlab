@@ -69,6 +69,9 @@ module.exports = function(grunt) {
       },
       primary: {
         src: 'httpdocs/sites/default/themes/primary_bootstrap/css/*.css'
+      },
+      patternlab: {
+        src: 'httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/style.css'
       }
     },
 
@@ -83,7 +86,7 @@ module.exports = function(grunt) {
         files: [
           'httpdocs/sites/all/themes/beaconfire_bootstrap/sass/**/*.scss',
           'httpdocs/sites/default/themes/primary_bootstrap/sass/**/*.scss',
-          'httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/scss/**/*.scss',
+          'httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/**/*.scss',
           'httpdocs/sites/default/themes/primary_bootstrap/js/parts/**/*.js'
         ],
         tasks: ['uglify','sass','postcss']        

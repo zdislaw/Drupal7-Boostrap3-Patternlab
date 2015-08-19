@@ -4,8 +4,17 @@
 		<title>{{ title }}</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
+		<script src="/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+		<script>jQuery.migrateMute=true;jQuery.migrateTrace=false;</script>
+		<script src="/sites/all/modules/jquery_update/replace/jquery-migrate/1.2.1/jquery-migrate.min.js?v=1.2.1"></script>
+		<script src="/sites/all/themes/beaconfire_bootstrap/js/libs/bootstrap.min.js?{{ cacheBuster }}"></script>
+
+		<link rel="stylesheet" href="/sites/all/themes/beaconfire_bootstrap/css/beaconfire_bootstrap.css?{{ cacheBuster }}" media="all" />
+		<link rel="stylesheet" href="/sites/default/themes/primary_bootstrap/css/styles.css?{{ cacheBuster }}" media="all" />
 
 		<link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
+
+
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		{% pattern-lab-head %}

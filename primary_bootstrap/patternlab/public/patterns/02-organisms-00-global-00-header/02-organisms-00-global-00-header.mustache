@@ -1,9 +1,18 @@
 &lt;!-- Begin .header --&gt;
 &lt;header id=&quot;navbar&quot; role=&quot;banner&quot; class=&quot;navbar navbar-default&quot;&gt;
-	{{&gt; atoms-logo }}
-	&lt;a href=&quot;#search-form&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;&lt;/a&gt;
-	&lt;a href=&quot;#nav&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;/span&gt;&lt;/a&gt;
-	{{&gt; molecules-primary-nav }}
-	{{&gt; molecules-search }}
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;navbar-header&quot;&gt;
+			{{&gt; atoms-logo }}
+		&lt;/div&gt;
+
+		&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+			{{&gt; molecules-primary-nav }}
+		&lt;/div&gt;		
+
+		&lt;a href=&quot;#search-form&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;&lt;/a&gt;
+		&lt;a href=&quot;#nav&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;/span&gt;&lt;/a&gt;
+		
+		{{&gt; molecules-search }}
+	&lt;/div&gt;
 &lt;/header&gt;
 &lt;!-- End .header --&gt;

@@ -4,8 +4,17 @@
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
+		<script src="/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+		<script>jQuery.migrateMute=true;jQuery.migrateTrace=false;</script>
+		<script src="/sites/all/modules/jquery_update/replace/jquery-migrate/1.2.1/jquery-migrate.min.js?v=1.2.1"></script>
+		<script src="/sites/all/themes/beaconfire_bootstrap/js/libs/bootstrap.min.js?1440012110"></script>
 
-		<link rel="stylesheet" href="../../css/style.css?1439993026" media="all" />
+		<link rel="stylesheet" href="/sites/all/themes/beaconfire_bootstrap/css/beaconfire_bootstrap.css?1440012110" media="all" />
+		<link rel="stylesheet" href="/sites/default/themes/primary_bootstrap/css/styles.css?1440012110" media="all" />
+
+		<link rel="stylesheet" href="../../css/style.css?1440012110" media="all" />
+
+
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -15,8 +24,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1439993026" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1439993026" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1440012110" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1440012110" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -35,34 +44,41 @@
 						<div class="sg-pattern-body">
 							<!-- Begin .header -->
 <header id="navbar" role="banner" class="navbar navbar-default">
-	<a href="#"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>	<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
-	<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-	<div class="navbar-collapse collapse">
-		<nav role="navigation">
-			<ul class="menu nav navbar-nav">
-				<li class="leaf"><a href="#">Home</a></li>
-				<li class="expanded active-trail dropdown active"><a href="#"  data-target="#" class="active-trail dropdown-toggle active" data-toggle="dropdown" aria-expanded="false">About <span class="caret"></span></a>
-					<ul class="dropdown-menu"><li class="first leaf"><a href="#">Nulla Singularis</a></li>
-						<li class="leaf"><a href="#">Sagaciter</a></li>
-						<li class="leaf"><a href="#">Sino</a></li>
-					</ul>
-				</li>
-				<li class="leaf"><a href="#">Blog</a></li>
-				<li class="leaf"><a href="#">Contact</a></li>
-			</ul>
-		</nav><!--end .nav-->
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="logo navbar-btn pull-left"><img src="/sites/default/themes/primary_bootstrap/logo.png" alt="Logo Alt Text" /></a>		</div>
+
+		<div class="navbar-collapse collapse">
+
+			<nav role="navigation">
+				<ul class="menu nav navbar-nav">
+					<li class="leaf"><a href="#">Home</a></li>
+					<li class="expanded active-trail dropdown active"><a href="#"  data-target="#" class="active-trail dropdown-toggle active" data-toggle="dropdown" aria-expanded="false">About <span class="caret"></span></a>
+						<ul class="dropdown-menu"><li class="first leaf"><a href="#">Nulla Singularis</a></li>
+							<li class="leaf"><a href="#">Sagaciter</a></li>
+							<li class="leaf"><a href="#">Sino</a></li>
+						</ul>
+					</li>
+					<li class="leaf"><a href="#">Blog</a></li>
+					<li class="leaf"><a href="#">Contact</a></li>
+				</ul>
+			</nav><!--end .nav-->
+
+		</div>		
+
+		<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
+		<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
+		
+		<form action="#" method="post" class="inline-form search-form">           
+			<div class="input-group">
+				<input title="Enter the terms you wish to search for." placeholder="Search" class="form-control form-text form-search" type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128">
+				<span class="input-group-btn"><button type="submit" class="btn btn-default">Search</button></span>
+			</div>
+		</form>
+
+
 	</div>
-	<form action="#" method="post" class="inline-form search-form">           
-	    <fieldset>
-		    <legend class="is-vishidden">Search</legend>
-		    <label for="search-field" class="is-vishidden">Search</label>
-		    <input type="search" placeholder="Search" id="search-field" class="search-field" />
-		    <button class="search-submit">
-		    	<span class="icon-search" aria-hidden="true"></span>
-		    	<span class="is-vishidden">Search</span>
-		    </button>
-	    </fieldset>
-	</form></header>
+</header>
 <!-- End .header -->
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
@@ -76,34 +92,41 @@
 									<code>
 										&lt;!-- Begin .header --&gt;
 &lt;header id=&quot;navbar&quot; role=&quot;banner&quot; class=&quot;navbar navbar-default&quot;&gt;
-	&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../../images/logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;&lt;/a&gt;	&lt;a href=&quot;#search-form&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;&lt;/a&gt;
-	&lt;a href=&quot;#nav&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;/span&gt;&lt;/a&gt;
-	&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
-		&lt;nav role=&quot;navigation&quot;&gt;
-			&lt;ul class=&quot;menu nav navbar-nav&quot;&gt;
-				&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-				&lt;li class=&quot;expanded active-trail dropdown active&quot;&gt;&lt;a href=&quot;#&quot;  data-target=&quot;#&quot; class=&quot;active-trail dropdown-toggle active&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;About &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-					&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Nulla Singularis&lt;/a&gt;&lt;/li&gt;
-						&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sagaciter&lt;/a&gt;&lt;/li&gt;
-						&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sino&lt;/a&gt;&lt;/li&gt;
-					&lt;/ul&gt;
-				&lt;/li&gt;
-				&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-				&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/nav&gt;&lt;!--end .nav--&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;navbar-header&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;logo navbar-btn pull-left&quot;&gt;&lt;img src=&quot;/sites/default/themes/primary_bootstrap/logo.png&quot; alt=&quot;Logo Alt Text&quot; /&gt;&lt;/a&gt;		&lt;/div&gt;
+
+		&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+
+			&lt;nav role=&quot;navigation&quot;&gt;
+				&lt;ul class=&quot;menu nav navbar-nav&quot;&gt;
+					&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+					&lt;li class=&quot;expanded active-trail dropdown active&quot;&gt;&lt;a href=&quot;#&quot;  data-target=&quot;#&quot; class=&quot;active-trail dropdown-toggle active&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;About &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+						&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Nulla Singularis&lt;/a&gt;&lt;/li&gt;
+							&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sagaciter&lt;/a&gt;&lt;/li&gt;
+							&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sino&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+					&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/nav&gt;&lt;!--end .nav--&gt;
+
+		&lt;/div&gt;		
+
+		&lt;a href=&quot;#search-form&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;&lt;/a&gt;
+		&lt;a href=&quot;#nav&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;/span&gt;&lt;/a&gt;
+		
+		&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
+			&lt;div class=&quot;input-group&quot;&gt;
+				&lt;input title=&quot;Enter the terms you wish to search for.&quot; placeholder=&quot;Search&quot; class=&quot;form-control form-text form-search&quot; type=&quot;search&quot; id=&quot;edit-search-block-form--2&quot; name=&quot;search_block_form&quot; value=&quot;&quot; size=&quot;15&quot; maxlength=&quot;128&quot;&gt;
+				&lt;span class=&quot;input-group-btn&quot;&gt;&lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Search&lt;/button&gt;&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/form&gt;
+
+
 	&lt;/div&gt;
-	&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
-	    &lt;fieldset&gt;
-		    &lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;/legend&gt;
-		    &lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;/label&gt;
-		    &lt;input type=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot; class=&quot;search-field&quot; /&gt;
-		    &lt;button class=&quot;search-submit&quot;&gt;
-		    	&lt;span class=&quot;icon-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-		    	&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;
-		    &lt;/button&gt;
-	    &lt;/fieldset&gt;
-	&lt;/form&gt;&lt;/header&gt;
+&lt;/header&gt;
 &lt;!-- End .header --&gt;
 									</code>
 								</pre>
@@ -181,10 +204,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1439993026">
+	<script id="pl-js-polyfill-insert-1440012110">
 		(function() {
 			if (self != top) {
-				var cb = '1439993026';
+				var cb = '1440012110';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -193,10 +216,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1439993026">
+	<script id="pl-js-insert-1440012110">
 		(function() {
 			if (self != top) {
-				var cb = '1439993026';
+				var cb = '1440012110';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
