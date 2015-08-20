@@ -7,6 +7,8 @@
 	zoom: 1;
 }
 
+//Prevents elements from being selecteable (form elements, links, etc.)
+//@include user-select(none);
 @mixin user-select($select) {
   -webkit-touch-callout: $select;
   -webkit-user-select: $select;
@@ -15,6 +17,7 @@
   -ms-user-select: $select;
   user-select: $select;
 }
+
 
 @mixin placeholder {
   &::-webkit-input-placeholder {@content}

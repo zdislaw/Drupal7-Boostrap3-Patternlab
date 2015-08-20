@@ -1,0 +1,58 @@
+//NOT being used right now because Bootstrap. This was the variables file we used before Bootstrap.
+
+// Colors
+$body-text-color:			#4c4c4c;
+$global-color-primary:		#00539e;//BLUE
+$global-color-secondary:	#d23a30;//RED
+$global-color-tertiary:		#008ea6;//Another Blue, used in blockquote icons and homepage herospace
+$global-color-quaternary:	#ae1d3a;//Another Red, see homepage herospace
+$global-color-grey:			#cccccc;
+$global-color-ltgrey:		#d3d3d3;
+$status-color: 				#4d8e4d;
+$warning-color: 			#fcce00;
+$error-color: 				#900;
+$selection-background: 		#00f;
+$selection-foreground: 		#fff;
+$border-color: 				$global-color-grey;
+
+$h1-color:					$body-text-color;
+$h2-color:					$global-color-secondary;
+$h3-color:					$global-color-secondary;
+$h4-color:					$body-text-color;
+$h5-color:					$body-text-color;
+$h6-color:					$body-text-color;
+$link-color:				$global-color-primary;
+$link-hover-color:			$global-color-secondary;
+$callout-box-bgcolor:		$global-color-ltgrey;
+
+// Nav colors
+$nav-base-color:				#fff;
+$nav-background: 				$global-color-primary;
+$nav-item-background: 			$nav-base-color;
+$nav-item-background-hover: 	$global-color-secondary;
+$nav-item-background-active:	$nav-base-color;
+$nav-text-color:				$global-color-primary;
+$nav-text-color-hover:			#fff;
+$subnav-text-color:				$global-color-primary;
+$subnav-hover-color:			$global-color-secondary;
+
+// Buttons
+$button-bg-color: #f9f9f9;
+$button-text-color: #333;
+
+// Forms
+$form-bg-color: #eee; // Used for fieldsets and vertical-tabs.
+$form-border-color: #ccc;
+
+// Borders
+$default-border:			1px solid $global-color-grey;
+$light-border:				1px solid $global-color-ltgrey;
+
+// z-index layers
+// Drupal admin menu is set to 999, so let's keep things below that!
+$z-modal:		900;//modal windows, popups
+$z-overlay:		800;//any page dimmers or other overlays below that
+$z-dropdown:	700;
+$z-header:		600;//header region
+$z-content:		500;//content region
+$z-footer:		600;//footer region increased from 400 to overlay TOC floating sidebars, if a problem deal with that.

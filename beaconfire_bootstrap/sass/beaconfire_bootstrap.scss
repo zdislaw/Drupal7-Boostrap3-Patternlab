@@ -1,5 +1,8 @@
-// Import custom Bootstrap variables
+//https://wiki.beaconfire.us/display/BFTECH/Drupal+Starter+Kit+2+Front+End+Documentation
+
+// Import custom Bootstrap variables for all Beaconfire builds
 @import "bootstrap_variables";
+//Import custom Bootstrap variables from the client theme
 @import "../../../../default/themes/primary_bootstrap/sass/partials/global/variables/bootstrap-variables";
-// Import Bootstrap for Sass
+// Import Bootstrap
 @import "../bootstrap_sass/bootstrap";
