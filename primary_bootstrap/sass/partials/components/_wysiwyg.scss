@@ -1,17 +1,17 @@
 img{
 	&.left,
 	&.right{
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 	}
 	&.left,//added via "Object Styles" dropdown
 	&[style*="float: left"]{//alig icons in editor toolbar
 		float: left;
-		margin-right: 1em;
+		margin-right: 2em;
 	}
 	&.right,
 	&[style*="float: right"]{
 		float: right;
-		margin-left: 1em;
+		margin-left: 2em;
 	}
 
 }

@@ -129,7 +129,6 @@ address {
   position: relative;
   height: 0;
   padding-bottom: 56.25%;
-  /* 16:9 */
 }
 
 .responsive-video iframe {

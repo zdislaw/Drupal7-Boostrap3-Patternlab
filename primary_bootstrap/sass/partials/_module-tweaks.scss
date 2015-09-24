@@ -6,4 +6,5 @@
 // 'module-tweaks' folder. Sass globbing will automatically import these
 // partials.
 
-@import 'module-tweaks/panels-ipe';
+@import 'module-tweaks/panels-ipe',
+		'module-tweaks/media';

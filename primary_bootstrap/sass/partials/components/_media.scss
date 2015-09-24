@@ -1,0 +1,42 @@
+.media-element-container{
+	&.pull-left{
+		margin-right: 2em;
+	}
+	&.pull-right{
+		margin-left: 2em;
+	}
+	.field-name-field-caption{
+		padding: 11px 11px 0 11px;
+		word-wrap: break-word;
+		background: #ececec;
+		font-size: .9em;
+		@include clearfix;
+	}
+	//This was for fun...add a file type tag overlaid in top corner of image.
+	/*
+	.file-image{		 
+		position: relative;
+		&:after{
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			content: '';
+			background: #000;
+			color: #fff;
+			font-size: .8em;
+			padding: 2px 4px;
+		} 
+	}
+	//Drupal adds these classes
+	.file-image-jpeg{
+		&:after{
+			content: 'jpg';
+		}
+	}
+	.file-image-gif{
+		&:after{
+			content: 'gif';
+		}
+	} */
+}

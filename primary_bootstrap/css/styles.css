@@ -154,7 +154,6 @@ address {
   position: relative;
   height: 0;
   padding-bottom: 56.25%;
-  /* 16:9 */
 }
 
 .responsive-video iframe {
@@ -172,6 +171,22 @@ ul.panels-ipe-linkbar {
 
 ul.panels-ipe-linkbar li {
   float: left;
+}
+
+.media-element-container.media-large {
+  max-width: 480px;
+}
+
+.media-element-container.media-medium {
+  max-width: 220px;
+}
+
+.media-element-container.media-small {
+  max-width: 100px;
+}
+
+.media-element-container .field-name-field-caption {
+  word-wrap: break-word;
 }
 
 /* Phones */
@@ -418,20 +433,74 @@ ul.horizontal-with-dots {
   }
 }
 
+.media-element-container {
+  /*
+	.file-image{		 
+		position: relative;
+		&:after{
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			content: '';
+			background: #000;
+			color: #fff;
+			font-size: .8em;
+			padding: 2px 4px;
+		} 
+	}
+	//Drupal adds these classes
+	.file-image-jpeg{
+		&:after{
+			content: 'jpg';
+		}
+	}
+	.file-image-gif{
+		&:after{
+			content: 'gif';
+		}
+	} */
+}
+
+.media-element-container.pull-left {
+  margin-right: 2em;
+}
+
+.media-element-container.pull-right {
+  margin-left: 2em;
+}
+
+.media-element-container .field-name-field-caption {
+  padding: 11px 11px 0 11px;
+  word-wrap: break-word;
+  background: #ececec;
+  font-size: .9em;
+  *zoom: 1;
+}
+
+.media-element-container .field-name-field-caption:after {
+  display: table;
+  content: "";
+}
+
+.media-element-container .field-name-field-caption:after {
+  clear: both;
+}
+
 img.left,
 img.right {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 img.left, img[style*="float: left"] {
   float: left;
-  margin-right: 1em;
+  margin-right: 2em;
 }
 
 img.right,
 img[style*="float: right"] {
   float: right;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 @media print {

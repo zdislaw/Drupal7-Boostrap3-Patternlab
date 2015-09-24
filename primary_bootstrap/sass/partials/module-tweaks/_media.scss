@@ -1,0 +1,15 @@
+.media-element-container{
+	//these widths are set in sass/global/variables/_media.scss
+	&.media-large{
+		max-width: $image-style-large;//480px
+	}
+	&.media-medium{
+		max-width: $image-style-medium;//220px
+	}
+	&.media-small{
+		max-width: $image-style-small;//100px
+	}
+	.field-name-field-caption{
+		word-wrap: break-word;
+	}
+}
