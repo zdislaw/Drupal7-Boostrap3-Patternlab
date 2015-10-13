@@ -75,6 +75,21 @@ module.exports = function(grunt) {
       }
     },
 
+    bowercopy: {
+        bootstrap: {
+          options: {
+            runBower: true,
+            report: true,
+            clean: true,
+          },
+          files: {
+            'httpdocs/sites/all/themes/beaconfire_bootstrap/bootstrap_sass': 'bootstrap-sass/assets/stylesheets/*.scss',
+            'httpdocs/sites/all/themes/beaconfire_bootstrap/bootstrap_sass/bootstrap': 'bootstrap-sass/assets/stylesheets/bootstrap/*.scss',
+            'httpdocs/sites/all/themes/beaconfire_bootstrap/bootstrap_sass/bootstrap/mixins': 'bootstrap-sass/assets/stylesheets/bootstrap/mixins/*.scss'
+          }
+        }
+    },
+
     watch: {
       scripts: {
         options: {
@@ -98,6 +113,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-bowercopy');
 
   // Default task(s).
   grunt.registerTask('default', ['uglify','sass','postcss']);
