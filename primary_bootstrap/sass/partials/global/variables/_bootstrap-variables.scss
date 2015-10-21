@@ -48,6 +48,8 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
+$font-size-base:          16px;
+
 $font-family-sans-serif:  Verdana, Helvetica, Arial, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 
@@ -56,10 +58,10 @@ $border-radius-base:        0;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~41px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~34px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~28px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~120px
 $font-size-h5:            $font-size-base;
-$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~14px
 

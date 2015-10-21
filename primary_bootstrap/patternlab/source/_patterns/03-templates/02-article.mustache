@@ -1,24 +1,22 @@
-<div class="page" id="page">
-	{{> organisms-header }}
-	<div role="main">
-		<div class="row">
-			<div class="col-sm-9">
-				<article class="article">
-					<header class="article-header">
-						<h1>Article Headline Lorem ipsum dolor sit aweofij</h1>
-						{{> molecules-byline }}
-					</header>
-					{{> organisms-article-body }}
-				</article><!--end .article-->
-				{{> molecules-social-share }}
-				{{> organisms-comment-thread }}
-			</div><!--end l-main-->
+{{> organisms-header }}
+<div class="main-container container">
+	<div class="row">
+		<div class="col-sm-9">
+			<article class="article">
+				<header class="article-header">
+					<h1>Article Headline Lorem ipsum dolor sit aweofij</h1>
+					{{> molecules-byline }}
+				</header>
+				{{> organisms-article-body }}
+			</article><!--end .article-->
+			{{> molecules-social-share }}
+			{{> organisms-comment-thread }}
+		</div><!--end l-main-->
 
-			<div class="col-sm-3">
-				{{> organisms-related-posts }}
-				{{> organisms-recent-tweets }}
-			</div><!--end l-sidebar-->
-		</div><!--end l-two-col-->	
-	</div><!--End role=main-->
-	{{> organisms-footer }}
-</div>
+		<div class="col-sm-3">
+			{{> organisms-related-posts }}
+			{{> organisms-recent-tweets }}
+		</div><!--end l-sidebar-->
+	</div><!--end l-two-col-->	
+</div><!--End role=main-->
+{{> organisms-footer }}

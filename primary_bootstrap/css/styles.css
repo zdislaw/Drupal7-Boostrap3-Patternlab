@@ -219,6 +219,12 @@ ul.panels-ipe-linkbar li {
   text-decoration: none;
 }
 
+.footer {
+  background-color: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  padding: 24px 0;
+}
+
 #admin-menu, #admin-menu .dropdown {
   z-index: 10000;
 }
@@ -417,6 +423,10 @@ tr.drag-previous {
   display: inline-block;
 }
 
+ul.row {
+  padding: 0;
+}
+
 ul.horizontal-with-dots {
   text-decoration: none;
 }
@@ -431,6 +441,11 @@ ul.horizontal-with-dots {
   ul.horizontal-with-dots li:last-child {
     background: none;
   }
+}
+
+.citation {
+  color: #555555;
+  font-size: 16px;
 }
 
 .media-element-container {
@@ -487,6 +502,11 @@ ul.horizontal-with-dots {
   clear: both;
 }
 
+.byline {
+  font-style: italic;
+  color: #555555;
+}
+
 img.left,
 img.right {
   margin-bottom: 2em;
@@ -501,6 +521,10 @@ img.right,
 img[style*="float: right"] {
   float: right;
   margin-left: 2em;
+}
+
+.main-container {
+  padding-bottom: 24px;
 }
 
 @media print {

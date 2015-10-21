@@ -1,4 +1,7 @@
 ul{
+	&.row{
+		padding: 0;//row is a bootstrap class
+	}
 	&.horizontal-with-dots{
 		@extend %no-bullets;
 		text-decoration: none;

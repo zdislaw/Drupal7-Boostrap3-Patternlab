@@ -26,12 +26,25 @@
 			&lt;a href=&quot;#search-form&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;&lt;/a&gt;
 			&lt;a href=&quot;#nav&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;/span&gt;&lt;/a&gt;
 			
-		&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
-			&lt;div class=&quot;input-group&quot;&gt;
-				&lt;input title=&quot;Enter the terms you wish to search for.&quot; placeholder=&quot;Search&quot; class=&quot;form-control form-text form-search&quot; type=&quot;search&quot; id=&quot;edit-search-block-form--2&quot; name=&quot;search_block_form&quot; value=&quot;&quot; size=&quot;15&quot; maxlength=&quot;128&quot;&gt;
-				&lt;span class=&quot;input-group-btn&quot;&gt;&lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Search&lt;/button&gt;&lt;/span&gt;
+		&lt;form class=&quot;form-search content-search&quot; action=&quot;#&quot; method=&quot;post&quot; id=&quot;search-block-form&quot; accept-charset=&quot;UTF-8&quot;&gt;&lt;div&gt;
+
+			&lt;!-- THEME DEBUG --&gt;
+			&lt;!-- CALL: theme('search_block_form') --&gt;
+			&lt;!-- BEGIN OUTPUT from 'sites/all/themes/bootstrap/theme/search/search-block-form.tpl.php' --&gt;
+			&lt;div&gt;
+				&lt;h2 class=&quot;element-invisible&quot;&gt;Search form&lt;/h2&gt;
+				&lt;div class=&quot;input-group&quot;&gt;
+					&lt;input title=&quot;Enter the terms you wish to search for.&quot; placeholder=&quot;Search&quot; class=&quot;form-control form-text form-search&quot; type=&quot;search&quot; id=&quot;edit-search-block-form--2&quot; name=&quot;search_block_form&quot; value=&quot;&quot; size=&quot;15&quot; maxlength=&quot;128&quot;&gt;
+					&lt;span class=&quot;input-group-btn&quot;&gt;
+						&lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Search&lt;/button&gt;
+					&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;button class=&quot;element-invisible btn btn-primary form-submit&quot; id=&quot;edit-submit&quot; name=&quot;op&quot; value=&quot;Search&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;
 			&lt;/div&gt;
-		&lt;/form&gt;
+
+		&lt;!-- END OUTPUT from 'sites/all/themes/bootstrap/theme/search/search-block-form.tpl.php' --&gt;
+
+		&lt;/div&gt;&lt;/form&gt;
 
 
 		&lt;/div&gt;
@@ -117,7 +130,7 @@
 	&lt;/div&gt;&lt;!--End role=main--&gt;
 	&lt;!-- Begin Footer --&gt;
 	&lt;footer class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
-		&lt;div class=&quot;lc&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
 			&lt;p class=&quot;copyright&quot;&gt;&amp;copy; 2013 Company Name. All rights reserved.&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/footer&gt;

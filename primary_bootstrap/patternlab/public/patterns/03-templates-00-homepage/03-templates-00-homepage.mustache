@@ -1,40 +1,38 @@
-&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-	{{&gt; organisms-header }}
-	&lt;div role=&quot;main&quot;&gt;
-		{{# emergency }}
-			{{&gt; molecules-alert:error }}
-		{{/ emergency }}
-		{{# hero }}
-			{{&gt; molecules-block-hero }}
-		{{/ hero}}
+{{&gt; organisms-header }}
+&lt;div class=&quot;main-container container&quot;&gt;
+	{{# emergency }}
+		{{&gt; molecules-alert:error }}
+	{{/ emergency }}
+	{{# hero }}
+		{{&gt; molecules-block-hero }}
+	{{/ hero}}
 
-		&lt;div class=&quot;row&quot;&gt;
-			{{# touts}}
-				&lt;div class=&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
-					{{&gt; molecules-block-inset }}
-				&lt;/div&gt;
-			{{/ touts}}
-		&lt;/div&gt;&lt;!--end 3up--&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		{{# touts}}
+			&lt;div class=&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+				{{&gt; molecules-block-inset }}
+			&lt;/div&gt;
+		{{/ touts}}
+	&lt;/div&gt;&lt;!--end 3up--&gt;
 
-		&lt;hr /&gt;
+	&lt;hr /&gt;
 
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;col-sm-9&quot;&gt;
-				&lt;section class=&quot;section latest-posts&quot;&gt;
-					&lt;h2 class=&quot;section-title&quot;&gt;Latest Posts&lt;/h2&gt;
-					&lt;ul class=&quot;row&quot;&gt;
-						{{# latest-posts }}
-							&lt;li class=&quot;col-sm-12 col-md-3 col-sm-3&quot;&gt;{{&gt; molecules-media-block }}&lt;/li&gt;
-						{{/ latest-posts }}
-					&lt;/ul&gt;
-					&lt;a href=&quot;#&quot; class=&quot;text-btn&quot;&gt;View more posts&lt;/a&gt;
-				&lt;/section&gt;
-			&lt;/div&gt;&lt;!--end .l-main--&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-9&quot;&gt;
+			&lt;section class=&quot;section latest-posts&quot;&gt;
+				&lt;h2 class=&quot;section-title&quot;&gt;Latest Posts&lt;/h2&gt;
+				&lt;ul class=&quot;row&quot;&gt;
+					{{# latest-posts }}
+						&lt;li class=&quot;col-sm-12 col-md-3 col-sm-3&quot;&gt;{{&gt; molecules-media-block }}&lt;/li&gt;
+					{{/ latest-posts }}
+				&lt;/ul&gt;
+				&lt;a href=&quot;#&quot; class=&quot;text-btn&quot;&gt;View more posts&lt;/a&gt;
+			&lt;/section&gt;
+		&lt;/div&gt;&lt;!--end .l-main--&gt;
 
-			&lt;div class=&quot;col-sm-3&quot;&gt;
-				{{&gt; organisms-recent-tweets }}
-			&lt;/div&gt;&lt;!--end .l-sidebar--&gt;
-		&lt;/div&gt;&lt;!--end .l-two-col--&gt;
-	&lt;/div&gt;&lt;!--End role=main--&gt;
-	{{&gt; organisms-footer }}
-&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3&quot;&gt;
+			{{&gt; organisms-recent-tweets }}
+		&lt;/div&gt;&lt;!--end .l-sidebar--&gt;
+	&lt;/div&gt;&lt;!--end .l-two-col--&gt;
+&lt;/div&gt;&lt;!--End role=main--&gt;
+{{&gt; organisms-footer }}
