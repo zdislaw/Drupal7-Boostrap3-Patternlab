@@ -1,6 +1,6 @@
-Beaconfire Drupal 7 Readme
+# Beaconfire Drupal 7 Readme
 
-Environments
+## Environments
 ----------
 
 * **Template VM:**			vm-drupal-template
@@ -16,7 +16,7 @@ Environments
 * **Prod eZ Code Path:  /data/www/drupal/httpdocs
 
 
-Drush
+## Drush
 ----------
 Drush is a command line tool used to manage Drupal. It is highly recommended
 that you use it instead of the GUI to do things like enable modules and flush the cache.
@@ -28,29 +28,29 @@ Some frequently used commands:
 - Search for a module: drush pml | grep "[keyword]"
 
  
-Compass Watch
+## Compass
 ----------
 Not using compass on this site, see Grunt...
 
  
-Grunt
+## Grunt
 -----
 Grunt is used on this site to compile CSS and JS. Check out Gruntfile.js in this directory to see what it does.
 To run Grunt...
 
 on a Vagrant box, after Vagrant is up, and in same command window:
-1. vagrant ssh
-2. cd /vagrant
-3. grunt [or] grunt watch
+* vagrant ssh
+* cd /vagrant
+* grunt [or] grunt watch
 
 anywhere else:
-# ssh bfire@lsc.beaconfire.us
-# cd /var/www/drupal
-# grunt
-## default "grunt" process all three themes (beaconfire_bootstrap, primary_bootstrap, patternlab)
-## "grunt dev" processes only primary_bootstrap and patternlab
-# grunt watch
-## "grunt watch" will only fire the js and css tasks relevant to the theme where the watched file occurred
+* ssh bfire@lsc.beaconfire.us
+* cd /var/www/drupal
+* grunt
+--* default "grunt" process all three themes (beaconfire_bootstrap, primary_bootstrap, patternlab)
+--* "grunt dev" processes only primary_bootstrap and patternlab
+* grunt watch
+--* "grunt watch" will only fire the js and css tasks relevant to the theme where the watched file occurred
 
 It is worth noting that grunt compiles CSS for the following:
 * sites/all/themes/beaconfire_bootstrap/beaconfire_bootstrap.scss (and js)
@@ -62,12 +62,12 @@ Deployment
 ----------
 
 Deployment is done via git with the following steps:
-1. ssh bfire@CLIENT_ALIAS.beaconfire.us
-2. cd to /var/www/drupal
-3. use git to push to vm-repos first (the default for git push): git push
-4. use git to push to prod: git push CLIENT_ALIAS-prod
-5. ssh bfire@prod
-6. cd to /data/www/drupal
-7. use git to update the live site: git pull
-8. refresh the cache via the admin or command line (drush cc all) and verify changes on site
+* ssh bfire@CLIENT_ALIAS.beaconfire.us
+* cd to /var/www/drupal
+* use git to push to vm-repos first (the default for git push): git push
+* use git to push to prod: git push CLIENT_ALIAS-prod
+* ssh bfire@prod
+* cd to /data/www/drupal
+* use git to update the live site: git pull
+* refresh the cache via the admin or command line (drush cc all) and verify changes on site
 
