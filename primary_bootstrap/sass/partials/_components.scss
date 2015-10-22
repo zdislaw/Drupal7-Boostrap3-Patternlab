@@ -1,34 +1,29 @@
-// @file
-// Component partials
-//
-// Discrete, reusable UI components. (SMACSS "modules") Build sub-folders and
-// partials in the 'components' folder. Sass globbing will automatically
-// import partials in the 'components' directory, but NOT in sub-directories
-// to ensure load order. Sub-directories will need to be manually imported
-// from a partial in the 'components' directory. See _nav.scss for an example.
+// This file was compiled automatically, do not edit!! Discrete, reusable UI components. (SMACSS "modules") Build sub-folders and partials in the *components* folder. Sass globbing will automatically import partials in the *components* directory, but NOT in sub-directories to ensure load order. Sub-directories will need to be manually imported from a partial in the *components* directory. See _nav.scss for an example.
 
-@import 
-"components/bootstrap-carousel",
-"components/breadcrumb",
-"components/buttons",
-"components/footer",
-"components/form",
-"components/header",
-"components/sidebar",
-"components/masonry",
-"components/messages",
-"components/navigation",
-"components/pager",
-"components/panels",
-"components/search",
-"components/social",
-"components/tabs",
-"components/tabledrag",
-"components/throbber",
-"components/twitter",
-"components/ul",
-"components/blockquote",
-"components/video",
-"components/media",
-"components/user-author-meta",
-"components/wysiwyg";
+@import "components/adminimal";
+@import "components/blockquote";
+@import "components/bootstrap-carousel";
+@import "components/breadcrumb";
+@import "components/buttons";
+@import "components/comments";
+@import "components/footer";
+@import "components/form";
+@import "components/header";
+@import "components/masonry";
+@import "components/media";
+@import "components/messages";
+@import "components/navigation";
+@import "components/pager";
+@import "components/panels";
+@import "components/search";
+@import "components/sidebar";
+@import "components/social";
+@import "components/tabledrag";
+@import "components/tabs";
+@import "components/throbber";
+@import "components/twitter";
+@import "components/ul";
+@import "components/user-author-meta";
+@import "components/vertical-tabs";
+@import "components/video";
+@import "components/wysiwyg";

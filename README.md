@@ -44,9 +44,18 @@ on a Vagrant box, after Vagrant is up, and in same command window:
 3. grunt [or] grunt watch
 
 anywhere else:
-1. ssh bfire@lsc.beaconfire.us
-2. cd /var/www/drupal
-3. grunt [or] grunt watch
+# ssh bfire@lsc.beaconfire.us
+# cd /var/www/drupal
+# grunt
+## default "grunt" process all three themes (beaconfire_bootstrap, primary_bootstrap, patternlab)
+## "grunt dev" processes only primary_bootstrap and patternlab
+# grunt watch
+## "grunt watch" will only fire the js and css tasks relevant to the theme where the watched file occurred
+
+It is worth noting that grunt compiles CSS for the following:
+* sites/all/themes/beaconfire_bootstrap/beaconfire_bootstrap.scss (and js)
+* sites/default/themes/primary_bootstrap/styles.scss (and js)
+* sites/default/themes/primary_bootstrap/patternlab/source/css/style.scss
 
 
 Deployment

@@ -1,4 +1,4 @@
-//This file is included in the "beaconfire_boostrap" theme not this client theme!!
+//This file is included up into the "beaconfire_boostrap" theme not this client theme!!
 //Variables change here will rollup into the Beaconfire Bootstrap theme, altering the
 //values of the core Bootstrap styles ("/sites/all/themes/beaconfire_bootstrap/css/beaconfire_bootstrap.css")
 
@@ -8,6 +8,7 @@
 
 //REMOVE the "!default" flag if you change a value in this file to indicate that it had diverged from the Bootstrap default.
 //Most of these are just here with the expectation that they will change, but remain the same as the day they were born.
+//OR they are here so we can use them in our client theme
 
 //== Colors
 //
@@ -64,4 +65,8 @@ $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~28px
 $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~120px
 $font-size-h5:            $font-size-base;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~14px
+
+$navbar-default-color:             #777 !default;
+$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 

@@ -2,15 +2,15 @@
 // Styles for vertical tabs.
 
 .vertical-tabs {
-  background: $body-color;
-  border: 1px solid $form-border-color;
+  background: $text-color;
+  border: 1px solid $gray;
   margin: rhythm(1) 0;
   position: relative;
 }
 
 .vertical-tabs-list {
-  background: $form-bg-color;
-  border-bottom: 1px solid $form-border-color;
+  background: $gray-light;
+  border-bottom: 1px solid $gray;
   float: left; // LTR
   list-style: none;
   margin: 0 -100% -1px 0; // LTR
@@ -36,7 +36,7 @@
 }
 
 .vertical-tabs-list a {
-  border: 1px solid $form-border-color;
+  border: 1px solid $gray;
   border-width: 1px 1px 0 0; // LTR
   display: block;
   margin: 0;
@@ -78,10 +78,10 @@
 
 .vertical-tabs-panes {
   background: #fff;
-  border-left: 255px solid $form-bg-color; // LTR
+  border-left: 255px solid $gray-light; // LTR
 
   [dir="rtl"] & {
-    border-right: 255px solid $form-bg-color; // LTR
+    border-right: 255px solid $gray-light; // LTR
     border-left: 0;
   }
 }

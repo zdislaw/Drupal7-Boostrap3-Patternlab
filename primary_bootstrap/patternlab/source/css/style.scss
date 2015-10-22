@@ -1,13 +1,17 @@
-
+//First, import the main client theme styes giving us access to all the variables therein and applying style
 @import
-'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/global',
-'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/base',
-'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/partials/helper-classes';
+'/var/www/drupal/httpdocs/sites/default/themes/primary_bootstrap/sass/styles';
 
-
-//OK, so that imported some of the the sass stuff from Beaconfire Bootstrap and the client theme
-//that will be handy to be able to use in here.
 //Now just start adding SASS here that you will eventually move to components in the client theme sass.
+//Duh, I know! You could just be working in the "primary_bootstrap" styles if you wanted to, and
+//if you're not worried about mucking things up on the dev site that are still in progress, then fine.
+//Seriously, be my guest.
+//Otherwise, it's safe to work in here on stuff that exists only in patternlab
+
+//IMPORTANT!!
+//you will rebuild the patternlab by firing off that "php core/builder.php -g" (generate) or "php core/builder.php -w" (watch) command
+//from the patternlab directory but that will just build from the generated CSS
+//The main grunt task down at /var/www/druapal will build the theme AND patternlab CSS
 
 
 
@@ -33,21 +37,3 @@
     }
 }
 
-.comment{//http://v7-2.dsk.beaconfire.us/sites/default/themes/primary_bootstrap/patternlab/public/?p=pages-article
-    margin-bottom: 2em;
-    @include clearfix;
-    .comment-meta{
-        float: left;
-        width: 20%;
-        margin-right: 1em;
-    }
-    .comment-content{
-        float: left;
-        width: 80%;
-    }
-    .comment-name{
-        margin-bottom: .4em;
-        line-height: 1.25em;
-        font-size: 1em;
-    }
-}

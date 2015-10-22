@@ -27,6 +27,19 @@ module.exports = function(grunt) {
       }
     },
 
+    sass_globbing: {
+      primary: {
+        files: {//grab all the components partials and write them into a single file
+          'httpdocs/sites/default/themes/primary_bootstrap/sass/partials/_components.scss': 
+          'httpdocs/sites/default/themes/primary_bootstrap/sass/partials/components/*.scss'
+        },
+        options: {
+          useSingleQuotes: false,
+          signature: '// This file was compiled automatically, do not edit!! Discrete, reusable UI components. (SMACSS "modules") Build sub-folders and partials in the *components* folder. Sass globbing will automatically import partials in the *components* directory, but NOT in sub-directories to ensure load order. Sub-directories will need to be manually imported from a partial in the *components* directory. See _nav.scss for an example.'
+        }
+      }
+    },
+
     sass : {
       options : {
        sourceMap : true,
@@ -69,42 +82,61 @@ module.exports = function(grunt) {
       },
       primary: {
         src: 'httpdocs/sites/default/themes/primary_bootstrap/css/*.css'
-      },
-      patternlab: {
-        src: 'httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/style.css'
       }
     },
 
     bowercopy: {
-        bootstrap: {
-          options: {
-            runBower: true,
-            report: true,
-            clean: true,
-          },
-          files: {
-            'httpdocs/sites/all/themes/beaconfire_bootstrap/bootstrap_sass': 'bootstrap-sass/assets/stylesheets/*.scss',
-            'httpdocs/sites/all/themes/beaconfire_bootstrap/bootstrap_sass/bootstrap': 'bootstrap-sass/assets/stylesheets/bootstrap/*.scss',
-            'httpdocs/sites/all/themes/beaconfire_bootstrap/bootstrap_sass/bootstrap/mixins': 'bootstrap-sass/assets/stylesheets/bootstrap/mixins/*.scss'
-          }
+      bootstrap: {
+        options: {
+          runBower: true,
+          report: true,
+          clean: true,
+        },
+        files: {
+          'httpdocs/sites/all/themes/beaconfire_bootstrap/bootstrap_sass': 'bootstrap-sass/assets/stylesheets/*.scss',
+          'httpdocs/sites/all/themes/beaconfire_bootstrap/bootstrap_sass/bootstrap': 'bootstrap-sass/assets/stylesheets/bootstrap/*.scss',
+          'httpdocs/sites/all/themes/beaconfire_bootstrap/bootstrap_sass/bootstrap/mixins': 'bootstrap-sass/assets/stylesheets/bootstrap/mixins/*.scss'
         }
+      }
     },
 
     watch: {
-      scripts: {
+      beaconfire: {
         options: {
           reload: false,
           spawn: false,
           interrupt: false,
           livereload: true
-        },
+        },                  
         files: [
-          'httpdocs/sites/all/themes/beaconfire_bootstrap/sass/**/*.scss',
+          'httpdocs/sites/all/themes/beaconfire_bootstrap/sass/**/*.scss'
+        ],
+        tasks: ['uglify:beaconfire','sass:beaconfire','postcss:beaconfire']
+      },
+      primary: {
+        options: {
+          reload: false,
+          spawn: false,
+          interrupt: false,
+          livereload: true
+        },     
+        files: [
           'httpdocs/sites/default/themes/primary_bootstrap/sass/**/*.scss',
-          'httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/**/*.scss',
           'httpdocs/sites/default/themes/primary_bootstrap/js/parts/**/*.js'
         ],
-        tasks: ['uglify','sass','postcss']        
+        tasks: ['uglify:primary','sass_globbing:primary','sass:primary','postcss:primary']
+      },
+      patternlab: {
+        options: {
+          reload: false,
+          spawn: false,
+          interrupt: false,
+          livereload: true
+        },  
+        files: [
+          'httpdocs/sites/default/themes/primary_bootstrap/patternlab/source/css/**/*.scss'
+        ],
+        tasks: ['sass:patternlab']
       }
     }
   });
@@ -114,8 +146,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-bowercopy');
+  grunt.loadNpmTasks('grunt-sass-globbing');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify','sass','postcss']);
+  grunt.registerTask('default', ['uglify','sass_globbing','sass']);
+  grunt.registerTask('dev', ['uglify:primary','sass_globbing:primary','sass:primary','sass:patternlab']);
+  grunt.registerTask('prod', ['uglify','sass_globbing','sass','postcss']);
 
 };
